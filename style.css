@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    --gradient: linear-gradient( 109.6deg,  rgba(247,253,166,1) 11.2%, rgba(128,255,221,1) 57.8%, rgba(255,128,249,1) 85.9% );
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #eaeaea;
+    background-image: var(--gradient);
+    background-size: 300%;
+    animation: gradient-animation 3s infinite alternate;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+
+    }
+}
+
+
+.card{
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px 35px;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.212);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.616);
+}
+
+.card img{
+    width: 260px; 
+    border-radius: 50%;
+    margin-top: 12px
+
+}
+
+.card h2{
+    font-size: 35px;
+    margin: 12px;
+    color: #000;
+    font-weight: 500;
+    font-family: 'Lilita One', cursive;
+}
+
+.card p{
+    font-size: 18px;
+    color: #1c1111;
+    margin: 10px auto;
+    max-width: 330px;
+}
+
+.card .links img{
+    width: 48px;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background 0.5s;
+}
+
+.card .links img:hover{
+    background: crimson;
+} 
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    background: #eaeaea;
+    color: crimson;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 15px 0 15px;
+}
+
+.btn:hover{
+    transition: background 0.5s; 
+    box-shadow: 0 8px 18px rgba(6, 8, 19, 0.499);
+}
